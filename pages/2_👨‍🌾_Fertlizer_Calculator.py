@@ -2,10 +2,12 @@ import streamlit as st
 
 
 
-st.title("حاسبة التسميد")
-st.header("Fertilization calculator")
+#Title and Overview
+st.markdown("<h1 style='text-align: center; '>Fertilization calculator</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; '>حاسبة التسميد</h1>", unsafe_allow_html=True)
 
-fertilizer_type = st.selectbox("أختر نوع السماد", ["سماد مركب (NPK)", "سماد عادي"])
+
+fertilizer_type = st.selectbox("Choose the fertilizer type (أختر نوع السماد)", ["سماد مركب (NPK)", "سماد عادي"])
 
 col1, col2, col3 = st.columns(3)
 
