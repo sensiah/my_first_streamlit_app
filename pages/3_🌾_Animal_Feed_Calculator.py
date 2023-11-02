@@ -2,11 +2,13 @@ import streamlit as st
 
 
 
-st.header("حاسبة العليقة")
-st.header("Animal Feed Calculator")
+#Title and Overview
+st.markdown("<h1 style='text-align: center; '>Animal Feed Calculator</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; '>حاسبة العليقة</h1>", unsafe_allow_html=True)
+
 
 farm_animals = ["🐪 إبل", "🐑 أغنام", "🐄 أبقار"]
-selected_animal = st.selectbox("اختر نوع الحيوان", options=farm_animals)
+selected_animal = st.selectbox("Choose Your Farm Animal (اختر نوع حيوان المزرعة)", options=farm_animals)
 
 if selected_animal == "🐪 إبل":
     pass
