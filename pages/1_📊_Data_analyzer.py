@@ -42,4 +42,7 @@ if file is not None:
         st.plotly_chart(fig_histogram)
     
     with tab3:
-        pass
+        barchart_xaxis = st.selectbox("Select features as X axis", list(df.columns))
+        barchart_yaxis = st.selectbox("Select features as Y axis", list(df.columns))
+        fig_barchart = px.bar(df, x=barchart_xaxis, y=barchart_yaxis)
+        st.plotly_chart(fig_barchart)
