@@ -3,6 +3,10 @@ import pandas as pd
 import plotly.express as px
 import numpy as np
 
+#Title
+st.markdown("<h1 style='text-align: center; '>Play With Data</h1>", unsafe_allow_html=True)
+st.write("You can interact with your data here just by upload it down (only CSV files)")
+
 #Upload file
 file = st.file_uploader("Upload your file", type=["csv"])
 
